@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nxq-za-LqG">
+            <objects>
+                <navigationController id="gPT-qa-s5n" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Qhb-gG-Qo6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JLT-nv-74E" kind="relationship" relationship="rootViewController" id="Lrf-k1-T42"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbn-JN-mRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="-8"/>
+        </scene>
+        <!--Вопрос №-->
+        <scene sceneID="y8w-fG-dFA">
+            <objects>
+                <viewController id="JLT-nv-74E" customClass="QuestionsViewController" customModule="ColorOfMood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZZ-l3-4b6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="89e-Ue-3Fb">
+                                <rect key="frame" x="20" y="160" width="374" height="682"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="bottom" secondItem="89e-Ue-3Fb" secondAttribute="bottom" constant="20" id="9mJ-FE-k6c"/>
+                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="trailing" secondItem="89e-Ue-3Fb" secondAttribute="trailing" constant="20" id="Anv-aY-FUv"/>
+                            <constraint firstItem="89e-Ue-3Fb" firstAttribute="leading" secondItem="DSP-Nh-dVj" secondAttribute="leading" constant="20" id="JIs-r5-3ms"/>
+                            <constraint firstItem="89e-Ue-3Fb" firstAttribute="top" secondItem="DSP-Nh-dVj" secondAttribute="top" constant="20" id="xtC-Hj-jYH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DSP-Nh-dVj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="gav-vF-IgN"/>
+                    <connections>
+                        <outlet property="questionsStackView" destination="89e-Ue-3Fb" id="fgd-R4-qCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WG-gn-wvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="-8"/>
+        </scene>
+    </scenes>
+</document>
