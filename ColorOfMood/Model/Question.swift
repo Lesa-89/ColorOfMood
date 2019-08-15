@@ -6,6 +6,7 @@
 //  Copyright © 2019 macbook. All rights reserved.
 //
 
+
 import Foundation
 
 struct Question {
@@ -18,6 +19,7 @@ extension Question {
     static func getQuestions() -> [Question] {
         return [
             Question(
+
                 text: "Выберите подходящее вам утверждение:",
                 type: .single,
                 answers: [
@@ -64,6 +66,7 @@ extension Question {
                     Answer(text: "Солнце", type: .yellow),
                     Answer(text: "Гроза", type: .green),
                     Answer(text: "Туман", type: .purple)
+
                 ]
             )
         ]
