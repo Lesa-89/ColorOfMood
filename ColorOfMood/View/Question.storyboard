@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gPT-qa-s5n">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,27 +34,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="89e-Ue-3Fb">
-                                <rect key="frame" x="20" y="160" width="374" height="682"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-q5-PXg">
+                                <rect key="frame" x="20" y="160" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="M0V-vd-rOo">
+                                <rect key="frame" x="20" y="348" width="374" height="346"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9z-es-sel">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOr-TD-eWP">
+                                        <rect key="frame" x="0.0" y="108.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weW-uf-lKn">
+                                        <rect key="frame" x="0.0" y="217" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-0y-ezI">
+                                        <rect key="frame" x="0.0" y="325.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="bottom" secondItem="89e-Ue-3Fb" secondAttribute="bottom" constant="20" id="9mJ-FE-k6c"/>
-                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="trailing" secondItem="89e-Ue-3Fb" secondAttribute="trailing" constant="20" id="Anv-aY-FUv"/>
-                            <constraint firstItem="89e-Ue-3Fb" firstAttribute="leading" secondItem="DSP-Nh-dVj" secondAttribute="leading" constant="20" id="JIs-r5-3ms"/>
-                            <constraint firstItem="89e-Ue-3Fb" firstAttribute="top" secondItem="DSP-Nh-dVj" secondAttribute="top" constant="20" id="xtC-Hj-jYH"/>
+                            <constraint firstItem="M0V-vd-rOo" firstAttribute="leading" secondItem="DSP-Nh-dVj" secondAttribute="leading" constant="20" id="0cG-IR-ftH"/>
+                            <constraint firstItem="M0V-vd-rOo" firstAttribute="centerY" secondItem="cZZ-l3-4b6" secondAttribute="centerY" constant="73" id="5OD-2a-SMj"/>
+                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="trailing" secondItem="M0V-vd-rOo" secondAttribute="trailing" constant="20" id="61Q-tZ-7Hf"/>
+                            <constraint firstItem="Iyf-q5-PXg" firstAttribute="top" secondItem="DSP-Nh-dVj" secondAttribute="top" constant="20" id="FuF-Od-KkV"/>
+                            <constraint firstItem="Iyf-q5-PXg" firstAttribute="leading" secondItem="DSP-Nh-dVj" secondAttribute="leading" constant="20" id="MeP-yS-qva"/>
+                            <constraint firstItem="DSP-Nh-dVj" firstAttribute="trailing" secondItem="Iyf-q5-PXg" secondAttribute="trailing" constant="20" id="XeA-Yh-m7u"/>
+                            <constraint firstItem="M0V-vd-rOo" firstAttribute="centerX" secondItem="cZZ-l3-4b6" secondAttribute="centerX" id="ixW-mR-EFH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DSP-Nh-dVj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="gav-vF-IgN"/>
-                    <connections>
-                        <outlet property="questionsStackView" destination="89e-Ue-3Fb" id="fgd-R4-qCg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WG-gn-wvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="-8"/>
+            <point key="canvasLocation" x="218.84057971014494" y="-8.0357142857142847"/>
         </scene>
     </scenes>
 </document>

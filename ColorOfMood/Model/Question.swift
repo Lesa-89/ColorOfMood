@@ -33,7 +33,6 @@ extension Question {
                     Answer(text: "Уютно устроиться с книгой", type: .blue),
                     Answer(text: "Посмотреть любимый фильм", type: .blue),
                     Answer(text: "Провести время с друзьями", type: .blue),
-                    Answer(text: "Предаться размышлениям о смысле жизни", type: .blue),
                 ]
             ),
             Question(
