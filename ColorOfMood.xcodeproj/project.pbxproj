@@ -12,6 +12,8 @@
 		FA3A37712305543400912008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A376F2305543400912008 /* Main.storyboard */; };
 		FA3A37732305543600912008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3A37722305543600912008 /* Assets.xcassets */; };
 		FA3A37762305543600912008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A37742305543600912008 /* LaunchScreen.storyboard */; };
+		FA3A378523055A1B00912008 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A378423055A1B00912008 /* ColorType.swift */; };
+		FA3A378723055A4C00912008 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A378623055A4C00912008 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA3A37722305543600912008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3A37752305543600912008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3A37772305543600912008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3A378423055A1B00912008 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		FA3A378623055A4C00912008 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		FA3A376A2305543400912008 /* ColorOfMood */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A376B2305543400912008 /* AppDelegate.swift */,
-				FA3A376D2305543400912008 /* ViewController.swift */,
-				FA3A376F2305543400912008 /* Main.storyboard */,
-				FA3A37722305543600912008 /* Assets.xcassets */,
-				FA3A37742305543600912008 /* LaunchScreen.storyboard */,
-				FA3A37772305543600912008 /* Info.plist */,
+				FA3A377F230556E400912008 /* Model */,
+				FA3A3780230556F600912008 /* View */,
+				FA3A3781230558C200912008 /* Controller */,
+				FA3A3782230558E600912008 /* Supporting Files */,
+				FA3A3783230558FC00912008 /* Resources */,
 			);
 			path = ColorOfMood;
+			sourceTree = "<group>";
+		};
+		FA3A377F230556E400912008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A378623055A4C00912008 /* Question.swift */,
+				FA3A378423055A1B00912008 /* ColorType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA3A3780230556F600912008 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A37742305543600912008 /* LaunchScreen.storyboard */,
+				FA3A376F2305543400912008 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA3A3781230558C200912008 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A376D2305543400912008 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA3A3782230558E600912008 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A376B2305543400912008 /* AppDelegate.swift */,
+				FA3A37772305543600912008 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA3A3783230558FC00912008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA3A37722305543600912008 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3A376E2305543400912008 /* ViewController.swift in Sources */,
+				FA3A378723055A4C00912008 /* Question.swift in Sources */,
 				FA3A376C2305543400912008 /* AppDelegate.swift in Sources */,
+				FA3A378523055A1B00912008 /* ColorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
