@@ -6,6 +6,9 @@
 //  Copyright © 2019 macbook. All rights reserved.
 //
 
+
+import Foundation
+
 struct Question {
     var text: String
     var type: ResponseType
@@ -16,43 +19,54 @@ extension Question {
     static func getQuestions() -> [Question] {
         return [
             Question(
-                text: "Выберите подходящее вам утверждение",
+
+                text: "Выберите подходящее вам утверждение:",
                 type: .single,
                 answers: [
-                    Answer(text: "Я ощущаю прилив сил и бодрости", type: .blue),
-                    Answer(text: "Я испытываю приступ меланхолии", type: .blue),
-                    Answer(text: "Моё состояние ровное и спокойное", type: .blue),
-                    Answer(text: "Моё настроение можно описать как мечтательное", type: .blue),
+                    Answer(text: "Я ощущаю прилив сил и бодрости", type: .green),
+                    Answer(text: "Я испытываю приступ меланхолии", type: .purple),
+                    Answer(text: "Мое состояние ровное и спокойное", type: .blue),
+                    Answer(text: "Мое настроение можно описать как мечтательное", type: .yellow)
                 ]
             ),
             Question(
-                text: "В настоящий момент вы бы предпочли",
-                type: .single,
+                text: "В настоящий момент вас привлекает возможность:",
+                type: .multiple,
                 answers: [
-                    Answer(text: "Отправиться в путешествие, сорвавшись с места", type: .blue),
-                    Answer(text: "Уютно устроиться с книгой", type: .blue),
-                    Answer(text: "Посмотреть любимый фильм", type: .blue),
-                    Answer(text: "Провести время с друзьями", type: .blue),
+                    Answer(text: "Отправиться в путешествие, сорвавшись с места", type: .yellow),
+                    Answer(text: "Уютно устроиться с книгой, посмотреть любимый фильм", type: .blue),
+                    Answer(text: "Провести время с друзьями", type: .green),
+                    Answer(text: "Предаться размышлениям о смысле жизни", type: .purple)
                 ]
             ),
             Question(
-                text: "В настоящий момент вы предпочитаете",
-                type: .single,
+                text: "В настоящий момент вы предпочитаете:",
+                type: .ranged,
                 answers: [
-                    Answer(text: "Одеваться неброско, практично", type: .blue),
-                    Answer(text: "Носить мрачные, тёмные тона", type: .blue),
-                    Answer(text: "Одеваться ярко, оригинально", type: .blue),
-                    Answer(text: "Соблюдать деловой стиль в одежде", type: .blue),
+                    Answer(text: "Одеваться неброско, практично", type: .yellow),
+                    Answer(text: "Носить мрачные, темные тона", type: .purple),
+                    Answer(text: "Одеваться ярко, оригинально", type: .green),
+                    Answer(text: "Соблюдать деловой стиль в одежде", type: .blue)
                 ]
             ),
             Question(
-                text: "Выберите привлекающий вас в настоящий момент вид деятельности",
-                type: .single,
+                text: "Выберите привлекающий вас в настоящий момент вид деятельности:",
+                type: .ranged,
                 answers: [
-                    Answer(text: "Спорт, активный отдых", type: .blue),
-                    Answer(text: "Чтение", type: .blue),
-                    Answer(text: "Интернет, общение, творчество", type: .blue),
-                    Answer(text: "Просмотр фильмов, прогулки", type: .blue),
+                    Answer(text: "Спорт, активный отдых", type: .green),
+                    Answer(text: "Чтение", type: .purple),
+                    Answer(text: "Интернет, общение, творчество", type: .yellow),
+                    Answer(text: "Просмотр фильмов, прогулки", type: .blue)
+                ]
+            ),            Question(
+                text: "Выберите предпочтительную для вас погоду",
+                type: .multiple,
+                answers: [
+                    Answer(text: "Снег", type: .blue),
+                    Answer(text: "Солнце", type: .yellow),
+                    Answer(text: "Гроза", type: .green),
+                    Answer(text: "Туман", type: .purple)
+
                 ]
             )
         ]
