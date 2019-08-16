@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5859E5523056F4400CABF48 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859E5423056F4400CABF48 /* Answer.swift */; };
-		B5859E572305709500CABF48 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859E562305709500CABF48 /* ResponseType.swift */; };
 		B5859E592305717C00CABF48 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5859E582305717C00CABF48 /* Question.storyboard */; };
 		B5859E5B2305745D00CABF48 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */; };
 		FA3A376C2305543400912008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A376B2305543400912008 /* AppDelegate.swift */; };
@@ -18,11 +16,10 @@
 		FA3A37762305543600912008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A37742305543600912008 /* LaunchScreen.storyboard */; };
 		FA3A378523055A1B00912008 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A378423055A1B00912008 /* ColorType.swift */; };
 		FA3A378723055A4C00912008 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A378623055A4C00912008 /* Question.swift */; };
+		FAD7834F23070FE000DA444B /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7834E23070FE000DA444B /* ResponseType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5859E5423056F4400CABF48 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		B5859E562305709500CABF48 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		B5859E582305717C00CABF48 /* Question.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Question.storyboard; sourceTree = "<group>"; };
 		B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		FA3A37682305543400912008 /* ColorOfMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +32,7 @@
 		FA3A378423055A1B00912008 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 		FA3A378623055A4C00912008 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		FA3A378A23055F2E00912008 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		FAD7834E23070FE000DA444B /* ResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,21 +46,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA28DAC323070B6700E3B178 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				B5859E562305709500CABF48 /* ResponseType.swift */,
-				B5859E5423056F4400CABF48 /* Answer.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		FA3A375F2305543400912008 = {
 			isa = PBXGroup;
 			children = (
 				FA3A376A2305543400912008 /* ColorOfMood */,
 				FA3A37692305543400912008 /* Products */,
-				FA28DAC323070B6700E3B178 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +77,7 @@
 		FA3A377F230556E400912008 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7834E23070FE000DA444B /* ResponseType.swift */,
 				FA3A378623055A4C00912008 /* Question.swift */,
 				FA3A378423055A1B00912008 /* ColorType.swift */,
 				FA3A378A23055F2E00912008 /* Answer.swift */,
@@ -207,9 +196,8 @@
 				FA3A376E2305543400912008 /* ViewController.swift in Sources */,
 				B5859E5B2305745D00CABF48 /* QuestionsViewController.swift in Sources */,
 				FA3A378723055A4C00912008 /* Question.swift in Sources */,
-				B5859E572305709500CABF48 /* ResponseType.swift in Sources */,
-				B5859E5523056F4400CABF48 /* Answer.swift in Sources */,
 				FA3A376C2305543400912008 /* AppDelegate.swift in Sources */,
+				FAD7834F23070FE000DA444B /* ResponseType.swift in Sources */,
 				FA3A378523055A1B00912008 /* ColorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -50,13 +50,13 @@ extension Question {
                 ]
             ),
             Question(
-                text: "Выберите привлекающий вас в настоящий момент вид деятельности:",
+                text: "Выберите привлекающее вас время суток:",
                 type: .ranged,
                 answers: [
-                    Answer(text: "Спорт, активный отдых", type: .green),
-                    Answer(text: "Чтение", type: .purple),
-                    Answer(text: "Интернет, общение, творчество", type: .yellow),
-                    Answer(text: "Просмотр фильмов, прогулки", type: .blue)
+                    Answer(text: "Утро", type: .green),
+                    Answer(text: "Ночь", type: .purple),
+                    Answer(text: "День", type: .yellow),
+                    Answer(text: "Вечер", type: .blue)
                 ]
             ),            Question(
                 text: "Выберите предпочтительную для вас погоду",
