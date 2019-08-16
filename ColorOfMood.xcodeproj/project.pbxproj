@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5859E592305717C00CABF48 /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5859E582305717C00CABF48 /* Question.storyboard */; };
 		B5859E5B2305745D00CABF48 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */; };
 		FA3A376C2305543400912008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A376B2305543400912008 /* AppDelegate.swift */; };
 		FA3A376E2305543400912008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A376D2305543400912008 /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5859E582305717C00CABF48 /* Question.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Question.storyboard; sourceTree = "<group>"; };
 		B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		FA3A37682305543400912008 /* ColorOfMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A376B2305543400912008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +29,6 @@
 		FA3A37772305543600912008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3A378423055A1B00912008 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 		FA3A378623055A4C00912008 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		FA3A378A23055F2E00912008 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		FAD7834E23070FE000DA444B /* ResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +77,6 @@
 				FAD7834E23070FE000DA444B /* ResponseType.swift */,
 				FA3A378623055A4C00912008 /* Question.swift */,
 				FA3A378423055A1B00912008 /* ColorType.swift */,
-				FA3A378A23055F2E00912008 /* Answer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,7 +86,6 @@
 			children = (
 				FA3A37742305543600912008 /* LaunchScreen.storyboard */,
 				FA3A376F2305543400912008 /* Main.storyboard */,
-				B5859E582305717C00CABF48 /* Question.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,7 +176,6 @@
 			files = (
 				FA3A37762305543600912008 /* LaunchScreen.storyboard in Resources */,
 				FA3A37732305543600912008 /* Assets.xcassets in Resources */,
-				B5859E592305717C00CABF48 /* Question.storyboard in Resources */,
 				FA3A37712305543400912008 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

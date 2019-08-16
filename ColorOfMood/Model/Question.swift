@@ -9,6 +9,11 @@
 
 import Foundation
 
+struct Answer {
+    var text: String
+    var type: ColorType
+}
+
 struct Question {
     var text: String
     var type: ResponseType
@@ -41,7 +46,7 @@ extension Question {
             ),
             Question(
                 text: "В настоящий момент вы предпочитаете:",
-                type: .ranged,
+                type: .single,
                 answers: [
                     Answer(text: "Одеваться неброско, практично", type: .yellow),
                     Answer(text: "Носить мрачные, темные тона", type: .purple),
