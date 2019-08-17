@@ -8,11 +8,11 @@
 
 
 import Foundation
-
-struct Answer {
-    var text: String
-    var type: ColorType
-}
+//
+//struct Answer {
+//    var text: String
+//    var type: ColorType
+//}
 
 struct Question {
     var text: String

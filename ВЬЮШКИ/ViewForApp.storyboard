@@ -39,6 +39,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.15905392169999999" green="0.095574654640000006" blue="0.037263602020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4e3-z8-wxp" kind="show" id="QIB-nv-Uqf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98355018459999999" blue="0.9510839472" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -56,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99.400299850074973" y="170.40000000000001"/>
+            <point key="canvasLocation" x="-98" y="170"/>
         </scene>
         <!--questionsViews-->
         <scene sceneID="ZLK-lI-wFv">
@@ -511,10 +514,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <segue destination="zXG-oC-jWy" kind="show" identifier="resultView" id="9yG-3C-aCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPZ-gD-ijp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724" y="169.56521739130437"/>
+            <point key="canvasLocation" x="647" y="170"/>
         </scene>
         <!--ResultView-->
         <scene sceneID="Oie-tn-gst">
