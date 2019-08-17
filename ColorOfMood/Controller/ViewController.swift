@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func unwindSegue(segue: UIStoryboardSegue){
+        let resultVC = segue.source as! ResultController
+        resultVC.delegate = self
+    }
 
 }
 
+extension ViewController: ColorDelegate{
+    func transferColor(_ color: UIColor) {
+        view.backgroundColor = color
+    }
+    
+    
+}

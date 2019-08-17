@@ -64,7 +64,6 @@
         <!--questionsViews-->
         <scene sceneID="ZLK-lI-wFv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wPZ-gD-ijp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="questionsViews" id="4e3-z8-wxp" customClass="QuestionsViewController" customModule="ColorOfMood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cl3-vA-mP1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -271,6 +270,7 @@
                         <segue destination="zXG-oC-jWy" kind="show" identifier="resultView" id="9yG-3C-aCe"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPZ-gD-ijp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645.60000000000002" y="169.56521739130437"/>
         </scene>
@@ -282,9 +282,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕЗУЛЬТАТ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rb-rQ-d62">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕЗУЛЬТАТ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rb-rQ-d62" userLabel="РЕЗУЛЬТАТ">
                                 <rect key="frame" x="20" y="54" width="374" height="50"/>
-                                <color key="backgroundColor" red="0.87218709979999998" green="0.78727148540000003" blue="0.65970848360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.87289911508560181" green="0.78586357831954956" blue="0.66272342205047607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="kHL-uL-jJN"/>
                                 </constraints>
@@ -292,19 +292,52 @@
                                 <color key="textColor" red="0.15905392169952393" green="0.095574654638767242" blue="0.037263602018356323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mtd-TN-9IA">
+                                <rect key="frame" x="20" y="170" width="374" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-RA-VFF">
+                                <rect key="frame" x="20" y="796" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.87289911509999996" green="0.78586357829999998" blue="0.66272342210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="BUD-iC-B3X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneClick:" destination="zXG-oC-jWy" eventType="touchUpInside" id="ao2-aa-RON"/>
+                                    <segue destination="p4g-1L-w4N" kind="unwind" unwindAction="unwindSegueWithSegue:" id="ScR-bC-GPc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98355018459999999" blue="0.9510839472" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="N4P-RH-vxi" firstAttribute="trailing" secondItem="6Rb-rQ-d62" secondAttribute="trailing" constant="20" id="4qN-Gy-kaJ"/>
+                            <constraint firstItem="N4P-RH-vxi" firstAttribute="trailing" secondItem="mtd-TN-9IA" secondAttribute="trailing" constant="20" id="8mn-A8-FZC"/>
+                            <constraint firstItem="vmc-RA-VFF" firstAttribute="top" secondItem="mtd-TN-9IA" secondAttribute="bottom" constant="65" id="EFZ-1V-Pnr"/>
+                            <constraint firstItem="vmc-RA-VFF" firstAttribute="centerX" secondItem="tma-y3-pOg" secondAttribute="centerX" id="kZn-lq-EIP"/>
+                            <constraint firstItem="mtd-TN-9IA" firstAttribute="leading" secondItem="N4P-RH-vxi" secondAttribute="leading" constant="20" id="mtp-hm-TR4"/>
+                            <constraint firstItem="mtd-TN-9IA" firstAttribute="top" secondItem="6Rb-rQ-d62" secondAttribute="bottom" constant="66" id="p36-1G-Pa0"/>
+                            <constraint firstItem="N4P-RH-vxi" firstAttribute="bottom" secondItem="vmc-RA-VFF" secondAttribute="bottom" constant="26" id="v1t-1m-aC6"/>
+                            <constraint firstItem="mtd-TN-9IA" firstAttribute="centerX" secondItem="tma-y3-pOg" secondAttribute="centerX" id="vPr-Uc-xI6"/>
                             <constraint firstItem="6Rb-rQ-d62" firstAttribute="top" secondItem="N4P-RH-vxi" secondAttribute="top" constant="10" id="wcm-d7-PQA"/>
                             <constraint firstItem="6Rb-rQ-d62" firstAttribute="leading" secondItem="N4P-RH-vxi" secondAttribute="leading" constant="20" id="xfY-6M-e7e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N4P-RH-vxi"/>
                     </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="mtd-TN-9IA" id="kT2-aM-Nwb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N5c-lZ-Pa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="p4g-1L-w4N" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1368.8" y="169.56521739130437"/>
+            <point key="canvasLocation" x="1366.6666666666667" y="169.41964285714286"/>
         </scene>
     </scenes>
 </document>
