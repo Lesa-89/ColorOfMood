@@ -21,7 +21,7 @@ class ResultController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resultTextView.text = colorDescription
+        resultTextView.text = colorDescription§
     }
     
     @IBAction func doneClick(_ sender: UIButton) {
