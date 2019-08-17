@@ -56,7 +56,7 @@ extension Question {
             ),
             Question(
                 text: "Выберите привлекающее вас время суток:",
-                type: .ranged,
+                type: .single,
                 answers: [
                     Answer(text: "Утро", type: .green),
                     Answer(text: "Ночь", type: .purple),

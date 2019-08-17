@@ -95,8 +95,6 @@ extension QuestionsViewController {
             updateSingleStackView(using: currentAnswers)
         case .multiple:
             updateMultipleStackView(using: currentAnswers)
-        case .ranged:
-            updateRangedStackView(using: currentAnswers)
         }
     }
     
