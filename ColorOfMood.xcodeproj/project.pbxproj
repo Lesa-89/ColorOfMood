@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B5859E5B2305745D00CABF48 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */; };
-		FA3A09E82307F1B700FEDD0C /* ViewForApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A09E72307F1B700FEDD0C /* ViewForApp.storyboard */; };
+		FA3A09E82307F1B700FEDD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3A09E72307F1B700FEDD0C /* Main.storyboard */; };
 		FA3A09EA2307F34400FEDD0C /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A09E92307F34400FEDD0C /* Answer.swift */; };
+		FA3A09EC2308150D00FEDD0C /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A09EB2308150D00FEDD0C /* ResultController.swift */; };
 		FA3A376C2305543400912008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A376B2305543400912008 /* AppDelegate.swift */; };
 		FA3A376E2305543400912008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A376D2305543400912008 /* ViewController.swift */; };
 		FA3A37732305543600912008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3A37722305543600912008 /* Assets.xcassets */; };
@@ -21,8 +22,9 @@
 
 /* Begin PBXFileReference section */
 		B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		FA3A09E72307F1B700FEDD0C /* ViewForApp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ViewForApp.storyboard; path = "ВЬЮШКИ/ViewForApp.storyboard"; sourceTree = SOURCE_ROOT; };
+		FA3A09E72307F1B700FEDD0C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "ВЬЮШКИ/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		FA3A09E92307F34400FEDD0C /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		FA3A09EB2308150D00FEDD0C /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 		FA3A37682305543400912008 /* ColorOfMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorOfMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A376B2305543400912008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3A376D2305543400912008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		FA3A3780230556F600912008 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A09E72307F1B700FEDD0C /* ViewForApp.storyboard */,
+				FA3A09E72307F1B700FEDD0C /* Main.storyboard */,
 				FA3A37742305543600912008 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -98,6 +100,7 @@
 			children = (
 				FA3A376D2305543400912008 /* ViewController.swift */,
 				B5859E5A2305745D00CABF48 /* QuestionsViewController.swift */,
+				FA3A09EB2308150D00FEDD0C /* ResultController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,7 +182,7 @@
 			files = (
 				FA3A37762305543600912008 /* LaunchScreen.storyboard in Resources */,
 				FA3A37732305543600912008 /* Assets.xcassets in Resources */,
-				FA3A09E82307F1B700FEDD0C /* ViewForApp.storyboard in Resources */,
+				FA3A09E82307F1B700FEDD0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +197,7 @@
 				B5859E5B2305745D00CABF48 /* QuestionsViewController.swift in Sources */,
 				FA3A378723055A4C00912008 /* Question.swift in Sources */,
 				FA3A09EA2307F34400FEDD0C /* Answer.swift in Sources */,
+				FA3A09EC2308150D00FEDD0C /* ResultController.swift in Sources */,
 				FA3A376C2305543400912008 /* AppDelegate.swift in Sources */,
 				FAD7834F23070FE000DA444B /* ResponseType.swift in Sources */,
 				FA3A378523055A1B00912008 /* ColorType.swift in Sources */,

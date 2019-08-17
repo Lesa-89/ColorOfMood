@@ -277,7 +277,7 @@
         <!--ResultView-->
         <scene sceneID="Oie-tn-gst">
             <objects>
-                <viewController title="ResultView" id="zXG-oC-jWy" sceneMemberID="viewController">
+                <viewController title="ResultView" id="zXG-oC-jWy" customClass="ResultController" customModule="ColorOfMood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tma-y3-pOg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

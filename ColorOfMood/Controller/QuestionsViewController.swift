@@ -106,13 +106,7 @@ extension QuestionsViewController {
         if questionIndex < questions.count {
             updateUI()
         } else {
-
-            // { Убрать после привязки к финальному вью
-            questionIndex = 0
-            updateUI()
-            // Убрать после привязки к финальному вью }
-
-            //performSegue(withIdentifier: "resultSegue", sender: nil)
+            performSegue(withIdentifier: "resultView", sender: nil)
         }
         
     }
@@ -133,13 +127,13 @@ extension QuestionsViewController {
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.text
         }
+        for switches in multipleSwitches {
+            switches.isOn = false
+        }
     }
-    
-    private func updateRangedStackView(using answers: [Answer]) {
-        // Show multiple stack view
-//        rangedStackView.isHidden = false
-//
-//        rangedLabels.first?.text = answers.first?.text
-//        rangedLabels.last?.text = answers.last?.text
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "resultView" else { return }
+        let resultVC = segue.destination as! ResultController
+        resultVC.responses = answersChoosen
     }
 }
