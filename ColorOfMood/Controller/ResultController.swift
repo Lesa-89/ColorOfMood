@@ -14,13 +14,14 @@ protocol ColorDelegate {
 class ResultController: UIViewController {
 
     var delegate: ColorDelegate?
-    var responses: [Answer]!
+    var colorDescription: String!
     var viewColor: UIColor!
     
     @IBOutlet var resultTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resultTextView.text = colorDescription
     }
     
     @IBAction func doneClick(_ sender: UIButton) {
