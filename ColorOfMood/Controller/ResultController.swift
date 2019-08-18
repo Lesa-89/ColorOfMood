@@ -15,6 +15,7 @@ class ResultController: UIViewController {
     
     var delegate: ColorDelegate?
     var viewColor: ColorType!
+    var cornerRadius: CGFloat = 10
     
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var resultImage: UIImageView!
@@ -29,9 +30,10 @@ class ResultController: UIViewController {
         view.backgroundColor = viewColor.colorUI
         resultTextView.text = viewColor.definition
         
-        resultLabel.layer.cornerRadius = 10
-        resultTextView.layer.cornerRadius = 10
-        doneButton.layer.cornerRadius = 10
+        resultLabel.layer.masksToBounds = true
+        resultLabel.layer.cornerRadius = cornerRadius
+        resultTextView.layer.cornerRadius = cornerRadius
+        doneButton.layer.cornerRadius = cornerRadius
         
     }
     

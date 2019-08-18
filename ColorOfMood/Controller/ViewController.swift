@@ -16,10 +16,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var nameAppLabel: UILabel!
     
+    var cornerRadius: CGFloat = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameAppLabel.layer.cornerRadius = 10
-        startButton.layer.cornerRadius = 10
+        
+        nameAppLabel.layer.masksToBounds = true
+        nameAppLabel.layer.cornerRadius = cornerRadius
+        startButton.layer.cornerRadius = cornerRadius
     }
     
     
