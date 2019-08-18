@@ -30,13 +30,13 @@ extension Question {
                 ]
             ),
             Question(
-                text: "В настоящий момент вас привлекает возможность:",
+                text: "Сейчас вас привлекает возможность:",
                 type: .multiple,
                 answers: [
-                    Answer(text: "Отправиться в путешествие, сорвавшись с места", type: .yellow),
-                    Answer(text: "Уютно устроиться с книгой, посмотреть любимый фильм", type: .blue),
+                    Answer(text: "Отправиться в путешествие", type: .yellow),
+                    Answer(text: "Уютно устроиться с книгой", type: .blue),
                     Answer(text: "Провести время с друзьями", type: .green),
-                    Answer(text: "Предаться размышлениям о смысле жизни", type: .purple)
+                    Answer(text: "Размышлять о смысле жизни", type: .purple)
                 ]
             ),
             Question(
