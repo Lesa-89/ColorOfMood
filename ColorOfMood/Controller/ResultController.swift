@@ -20,6 +20,7 @@ class ResultController: UIViewController {
     @IBOutlet var resultImage: UIImageView!
     @IBOutlet var resultTextView: UITextView!
     
+    @IBOutlet var doneButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text = "Цвет вашего настроения - \(viewColor.rawValue)"
@@ -27,6 +28,11 @@ class ResultController: UIViewController {
         resultImage.image = viewColor.image
         view.backgroundColor = viewColor.colorUI
         resultTextView.text = viewColor.definition
+        
+        resultLabel.layer.cornerRadius = 10
+        resultTextView.layer.cornerRadius = 10
+        doneButton.layer.cornerRadius = 10
+        
     }
     
     func transferImage() {
