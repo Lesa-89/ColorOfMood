@@ -22,6 +22,7 @@ class ResultController: UIViewController {
     @IBOutlet var resultTextView: UITextView!
     
     @IBOutlet var doneButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         resultLabel.text = "Цвет вашего настроения - \(viewColor.rawValue)"
