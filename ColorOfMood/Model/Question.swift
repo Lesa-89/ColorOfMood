@@ -8,11 +8,6 @@
 
 
 import Foundation
-//
-//struct Answer {
-//    var text: String
-//    var type: ColorType
-//}
 
 struct Question {
     var text: String
@@ -24,7 +19,7 @@ extension Question {
     static func getQuestions() -> [Question] {
         return [
             Question(
-
+                
                 text: "Выберите подходящее вам утверждение:",
                 type: .single,
                 answers: [
@@ -71,7 +66,7 @@ extension Question {
                     Answer(text: "Солнце", type: .yellow),
                     Answer(text: "Гроза", type: .green),
                     Answer(text: "Туман", type: .purple)
-
+                    
                 ]
             )
         ]

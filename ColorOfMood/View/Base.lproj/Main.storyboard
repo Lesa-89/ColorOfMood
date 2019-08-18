@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="height" constant="50" id="lk3-L5-Ibo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Старт">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -64,6 +64,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="nameAppLabel" destination="GEv-0J-Hej" id="A3M-74-XJa"/>
+                        <outlet property="startButton" destination="R2e-Js-pY6" id="1gX-C1-9x5"/>
                         <outlet property="startImage" destination="NZ5-kz-Lkn" id="6HL-Rl-IMj"/>
                     </connections>
                 </viewController>
@@ -231,7 +233,7 @@
                                             <constraint firstAttribute="height" constant="60" id="JDA-6Q-Wps"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                        <state key="normal" title="More">
+                                        <state key="normal" title="Вперед">
                                             <color key="titleColor" red="0.15905392169952393" green="0.095574654638767242" blue="0.037263602018356323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>

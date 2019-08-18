@@ -9,18 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet var startImage: UIImageView!
+    
+    @IBOutlet var startButton: UIButton!
+    
+    @IBOutlet var nameAppLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameAppLabel.layer.cornerRadius = 10
+        startButton.layer.cornerRadius = 10
     }
-
+    
+    
+    
     @IBAction func unwindSegue(segue: UIStoryboardSegue){
         let resultVC = segue.source as! ResultController
         resultVC.delegate = self
         resultVC.transferImage()
     }
-
+    
 }
 
 extension ViewController: ColorDelegate{

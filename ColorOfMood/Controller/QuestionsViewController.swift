@@ -12,9 +12,9 @@ class QuestionsViewController: UIViewController {
     
     @IBOutlet var bacgroundImage: UIImageView!
     @IBOutlet var questionLabel: UILabel!
-
+    
     @IBOutlet var questionProgressView: UIProgressView!
-
+    
     @IBOutlet var singleStackView: UIStackView!
     @IBOutlet var singleButtons: [UIButton]!
     
@@ -40,7 +40,7 @@ class QuestionsViewController: UIViewController {
     // MARK: - IB Actions
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
         guard let currentIndex = singleButtons.firstIndex(of: sender) else { return }
-
+        
         let currentAnswers = questions[questionIndex].answers
         let currentAnswer = currentAnswers[currentIndex]
         answersChoosen.append(currentAnswer)
@@ -150,7 +150,7 @@ extension QuestionsViewController {
         
         // Show single stack view
         singleStackView.isHidden = false
-
+        
         for (button, answer) in zip(singleButtons, answers) {
             button.setTitle(answer.text, for: .normal)
         }
@@ -159,7 +159,7 @@ extension QuestionsViewController {
     private func updateMultipleStackView(using answers: [Answer]) {
         // Show multiple stack view
         multipleStackView.isHidden = false
-
+        
         for (label, answer) in zip(multipleLabels, answers) {
             label.text = answer.text
         }

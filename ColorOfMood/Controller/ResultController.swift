@@ -12,7 +12,7 @@ protocol ColorDelegate {
     func transferImage(_ image: UIImage)
 }
 class ResultController: UIViewController {
-
+    
     var delegate: ColorDelegate?
     var viewColor: ColorType!
     
@@ -44,6 +44,6 @@ class ResultController: UIViewController {
     @IBAction func doneClick(_ sender: UIButton) {
     }
     
-
+    
 }
 
