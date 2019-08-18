@@ -28,6 +28,7 @@ enum ColorType: String {
             return "Сиреневый цвет оказывает самое существенное влияние на вас в данную минуту. Вы испытываете острую потребность видеть в окружающих вас людях только хорошее, а в пространстве вокруг - только положительные изменения. Неодолимая тяга к уюту очень характерна для вас в настоящий момент, и не стоит этому противиться, возможно, вы переутомились или просто устали от череды важных событий в вашей жизни. Воздействие сиреневого цвета поможет расслабиться и отдохнуть душой, занявшись любимым делом. Оглядываясь вокруг вы не замечаете негативных событий, видя во всем что-то хорошее. Ваша жизненная позиция на настоящий момент близка к фразе \"Стакан наполовину полон скорее, нежели наполовину пуст\"."
         }
     }
+    
     var colorUI: UIColor {
         switch self {
         case .green:
@@ -38,6 +39,19 @@ enum ColorType: String {
             return .blue
         case .purple:
             return .purple
+        }
+    }
+    
+    var image: UIImage {
+        switch self {
+        case .green:
+            return #imageLiteral(resourceName: "green")
+        case .yellow:
+            return #imageLiteral(resourceName: "yellow")
+        case .blue:
+            return #imageLiteral(resourceName: "blue")
+        case .purple:
+            return #imageLiteral(resourceName: "purple")
         }
     }
 }

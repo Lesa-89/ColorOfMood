@@ -9,25 +9,29 @@
 import UIKit
 
 protocol ColorDelegate {
-    func transferColor(_ color: UIColor)
+    func transferImage(_ image: UIImage)
 }
 class ResultController: UIViewController {
 
     var delegate: ColorDelegate?
-    var colorDescription: String!
     var viewColor: ColorType!
     
+    @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var resultImage: UIImageView!
     @IBOutlet var resultTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        resultLabel.text = "Цвет вашего настроения - \(viewColor.rawValue)"
+        resultLabel.textColor = viewColor.colorUI
+        resultImage.image = viewColor.image
         view.backgroundColor = viewColor.colorUI
         resultTextView.text = viewColor.definition
     }
     
-    func transferColor() {
-        let newColor = viewColor.colorUI
-        delegate?.transferColor(newColor)
+    func transferImage() {
+        let newImage = viewColor.image
+        delegate?.transferImage(newImage)
         
     }
     

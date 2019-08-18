@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var startImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,17 +18,13 @@ class ViewController: UIViewController {
     @IBAction func unwindSegue(segue: UIStoryboardSegue){
         let resultVC = segue.source as! ResultController
         resultVC.delegate = self
-        resultVC.transferColor()
+        resultVC.transferImage()
     }
 
 }
 
 extension ViewController: ColorDelegate{
-    
-    func transferColor(_ color: UIColor) {
-        view.backgroundColor = color
+    func transferImage(_ image: UIImage) {
+        startImage.image = image
     }
-
-    
-    
 }

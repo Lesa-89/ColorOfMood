@@ -17,7 +17,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hgc-y4-1mQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOOD COLOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUy-e6-QFa">
+                                <rect key="frame" x="40" y="139" width="334" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="bIc-4S-vQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YUy-e6-QFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="41x-Gu-wyc"/>
+                            <constraint firstAttribute="trailing" secondItem="hgc-y4-1mQ" secondAttribute="trailing" id="Ie4-DL-KML"/>
+                            <constraint firstItem="hgc-y4-1mQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="IlI-xh-jOf"/>
+                            <constraint firstItem="YUy-e6-QFa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="Qx8-CU-d5i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YUy-e6-QFa" secondAttribute="trailing" constant="40" id="T1K-yo-jqE"/>
+                            <constraint firstItem="hgc-y4-1mQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hEL-VR-R56"/>
+                            <constraint firstAttribute="bottom" secondItem="hgc-y4-1mQ" secondAttribute="bottom" id="jif-6j-UJR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -26,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="2480" height="3508"/>
+    </resources>
 </document>

@@ -10,6 +10,7 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
     
+    @IBOutlet var bacgroundImage: UIImageView!
     @IBOutlet var questionLabel: UILabel!
 
     @IBOutlet var questionProgressView: UIProgressView!
