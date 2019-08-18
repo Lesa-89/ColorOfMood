@@ -327,7 +327,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Done">
+                                <state key="normal" title="В начало">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
@@ -357,6 +357,7 @@
                         <viewLayoutGuide key="safeArea" id="N4P-RH-vxi"/>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="vmc-RA-VFF" id="shO-3E-efW"/>
                         <outlet property="resultImage" destination="gBk-ry-Zch" id="wUm-wT-vbq"/>
                         <outlet property="resultLabel" destination="6Rb-rQ-d62" id="SDI-hd-R25"/>
                         <outlet property="resultTextView" destination="mtd-TN-9IA" id="kT2-aM-Nwb"/>
