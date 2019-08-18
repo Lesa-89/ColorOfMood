@@ -15,18 +15,25 @@ class ResultController: UIViewController {
 
     var delegate: ColorDelegate?
     var colorDescription: String!
-    var viewColor: UIColor!
+    var viewColor: ColorType!
     
     @IBOutlet var resultTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = viewColor.colorUI
+        resultTextView.text = viewColor.definition
+    }
+    
+    func transferColor() {
+        let newColor = viewColor.colorUI
+        delegate?.transferColor(newColor)
         
-        resultTextView.text = colorDescription§
     }
     
     @IBAction func doneClick(_ sender: UIButton) {
-        delegate?.transferColor(viewColor)
     }
     
 
 }
+

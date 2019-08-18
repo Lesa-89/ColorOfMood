@@ -167,7 +167,7 @@ extension QuestionsViewController {
         }
     }
     
-    private func prepareColor() -> UIColor {
+    private func prepareColor() -> ColorType {
         
         var frequencyOfColors: [ColorType: Int] = [:]
         let colors = answersChoosen.map { $0.type }
@@ -177,7 +177,7 @@ extension QuestionsViewController {
         }
         
         let sortedFrequencyOfColors = frequencyOfColors.sorted { $0.value > $1.value }
-        guard let mostFrequensyColor = sortedFrequencyOfColors.first?.key else { return .black}
+        guard let mostFrequensyColor = sortedFrequencyOfColors.first?.key else { return .blue }
         
         switch mostFrequensyColor {
         case .green: return .green

@@ -251,6 +251,7 @@
                         <viewLayoutGuide key="safeArea" id="wED-Ty-R0m"/>
                     </view>
                     <connections>
+                        <outlet property="applyButton" destination="Lcw-4b-Nwh" id="Mfe-r0-OFE"/>
                         <outlet property="multipleStackView" destination="aT2-Zg-hTj" id="MFX-hB-9S1"/>
                         <outlet property="questionLabel" destination="fDq-I4-003" id="NbD-24-tHO"/>
                         <outlet property="questionProgressView" destination="BTt-3k-gmq" id="0mF-S2-SJC"/>
