@@ -180,12 +180,7 @@ extension QuestionsViewController {
         let sortedFrequencyOfColors = frequencyOfColors.sorted { $0.value > $1.value }
         guard let mostFrequensyColor = sortedFrequencyOfColors.first?.key else { return .blue }
         
-        switch mostFrequensyColor {
-        case .green: return .green
-        case .yellow: return .yellow
-        case .blue: return .blue
-        case .purple: return .purple
-        }
+        return mostFrequensyColor
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
